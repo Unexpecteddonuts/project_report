@@ -1,37 +1,37 @@
-##Report Log
+# Report Log
 
 ## Entry 1 (21/06/2023)
 
-### CNOT gate issue
+### 1. CNOT gate issue
 [![img1](https://raw.githubusercontent.com/Unexpecteddonuts/project_report/main/Cnot%20issue%2C%20when%20move%20website%20breaks.png "img1")](https://raw.githubusercontent.com/Unexpecteddonuts/project_report/main/Cnot%20issue%2C%20when%20move%20website%20breaks.png "img1")
-#####Discription
+#### Discription
 When the target qubit for the CNOT gate is changed and then its tried to move, or if the element is moved out of the box while dragging to a different pair of qubits it breaks the website in some instances.
-#####Recomendation
+#### Recomendation
 Its difficult to say anything without looking at the code but its most possibly due to incorrect validation and error handling of the `drag`  related events.
 
-### Errors while altering the existing circuit before saving it.
+### 2. Errors while altering the existing circuit before saving it.
 ![](https://github.com/Unexpecteddonuts/project_report/blob/main/bell%20state.png?raw=true)
 
-#####Discription
+#### Discription
 for example in the above bell state circuit, if i were to ass another element after i click on the `simulator` button and then i add another CNOT with `q[2]`  as the target qubit and then take a measurement it the website hangs in some instances, this instance is one example.
 
-#####Recomendation
+#### Recomendation
 This is due to some other elements conflicting in the event handling as this is not a consistent error. i tried 5 circuits and this error was seen twice.
 
-### Simulating and Saving errors are very common.
+### 3. Simulating and Saving errors are very common.
 ![](https://github.com/Unexpecteddonuts/project_report/blob/main/cant%20save,%20cant%20simlate,%20errors%20very%20often.png?raw=true)
-#####Discription
+#### Discription
 This is a problem that occurs very often and very often the website becomes unresponsive after a failed `simulator` task.
 
 Another issue is the fact that if i shift between the `Circuit Composer` and the `Dashboard` to check on submitted `tasks` the `task` im working on in the composer gets cleared.
 
-#####Recomendation
+#### Recomendation
 Unsaved `Circuit Composer` should be stored in the session data and not cleared with every tab change.
 
-###Adition of Features.
+### 4. Adition of Features.
 ![](https://github.com/Unexpecteddonuts/project_report/blob/main/add%20not%20gate%20%20.png?raw=true)
 
-#####Discription
+#### Discription
 Addition of basic classical gates such as the NOT gate, without these gates simple algorithms such as grovers algorithm too aren't possible.
 
 Adition of Phase Change Operators such as the PhaseGate, RZ(Z-axis Rotation) Gate, Tdg gate.
