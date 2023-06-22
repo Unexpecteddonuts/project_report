@@ -28,14 +28,17 @@ Another issue is the fact that if i shift between the `Circuit Composer` and the
 #### Recomendation
 Unsaved `Circuit Composer` should be stored in the session data and not cleared with every tab change.
 
-### 4. Adition of Features.
-![](https://github.com/Unexpecteddonuts/project_report/blob/main/add%20not%20gate%20%20.png?raw=true)
+## Entry 2 (22/06/2023)
 
-#### Discription
-Addition of basic classical gates such as the NOT gate, without these gates simple algorithms such as grovers algorithm too aren't possible.
+###Overview.
+Fewer bugs were found today than yesterday.
 
-Adition of Phase Change Operators such as the PhaseGate, RZ(Z-axis Rotation) Gate, Tdg gate.
+### 1. QASM to Circuit 
 
-The addition of Quantum operators such as RCCX, RCCCX, SX(squareroot of X) Gate, U, etc gates as more complex Algorithms would require these, and since the algorithms will mainly be submitted in Qiskit(which will be converted to QASM(OpenQasm 2.0)) and these gates are available in qiskit and without them those tasks would not be able to eb executed.
+#### Discription.
+As the current interface stands there is no way a QASM circuit code can be concerted to a Circuit on the`Composer` and only after a successfull job do you get the QASM code foor your Circuit.
 
-Adding of the basic Reset operator.
+### 2. Editing Saved Circuit Bug Fixed
+
+#### Discription.
+ The buggy part where more qubits couldnt be added to a saved circuit has been fixed, i tried that today morning and it worked fine.
