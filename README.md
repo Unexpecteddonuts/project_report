@@ -30,7 +30,7 @@ Unsaved `Circuit Composer` should be stored in the session data and not cleared 
 
 ## Entry 2 (22/06/2023)
 
-###Overview.
+### Overview.
 Fewer bugs were found today than yesterday.
 
 ### 1. QASM to Circuit 
