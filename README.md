@@ -11,4 +11,7 @@ When a particular circuit is saved and run the first time it produces the correc
 ## 3. Editing a proect requires you to renaming.
 ### Description:
 After saving a project and running it, if i go back to editing the project and make a change it requires me to once again name it. 
-Job name also muct be `<circuit_name>_<run_number>`
+
+## 4. Job name should be predefined:
+### Description: 
+Every run does not need oto be given a different job name, Job names be `<circuit_name>_<run_number>`
