@@ -11,3 +11,7 @@ After saving a project and running it, if i go back to editing the project and m
 ## 3. Job name should be predefined:
 ### Description: 
 Every run does not need oto be given a different job name, Job names be `<circuit_name>_<run_number>`
+
+## cannot add gates beyond a certain pont:
+### Description:
+On a single lane you cannon add more than 7 to 8 entities, after which they all overlap and dont give you the desired circiut, which in turn makes extending the lanes using a scroll bar useless.
