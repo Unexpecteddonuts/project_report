@@ -1,7 +1,7 @@
 # Report Log
 
 ## 1. QASM to Circuit 
-#### Discription.
+### Discription.
 there is still no way a QASM circuit code can be concerted to a Circuit on the`Composer` and only after a successfull job do you get the QASM code foor your Circuit. but now there is a server error in all cases. ive trued this mornign afeternoon and eving at 2 hr intervals
 
 ## 2. Editing saved circiut causes errors in output.
